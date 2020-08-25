@@ -1,0 +1,31 @@
+{
+  "name": "@version-shared-discrepancy/app1",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7.11.4",
+    "@babel/preset-react": "7.10.4",
+    "babel-loader": "8.1.0",
+    "html-webpack-plugin": "git://github.com/ScriptedAlchemy/html-webpack-plugin#master",
+    "serve": "11.3.2",
+    "webpack": "5.0.0-beta.25",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 3001",
+    "clean": "rm -rf dist node_modules"
+  },
+  "sharedDependencies": {
+    "lodash": ">=4.10.0",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "dependencies": {
+    "lodash": "4.10.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

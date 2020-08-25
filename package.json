@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "lerna bootstrap --no-ci --hoist",
+    "start": "lerna run --parallel start",
+    "build": "lerna run build",
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "name": "version-shared-discrepancy"
+}
